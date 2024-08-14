@@ -5,14 +5,12 @@ Method I used to convert h5 to ONNX for implementation in Untiy Sentis. Uses Pyt
 ## Installation and method
 1. Clone this repo.
 2. Create and activate the Anaconda environment with required dependencies:
-`conda env create -f environment.yaml`
-`conda activate h5-to-onnx`
+```conda env create -f environment.yaml```
+```conda activate h5-to-onnx```
 3. Install additional requirements if necessary and place the .h5 model file in the directory.
 4. Use Jupyter Notebook in the conda env (keras2onnx) to load the model and save it as SavedModel. Change the model filepath/name in the notebook if neccesary.
 5. Convert from SavedModel to ONNX using line:
-```python
-python3 -m tf2onnx.convert --saved-model tensorflow-model-directory --output model.onnx --opset 13
-```
+```python3 -m tf2onnx.convert --saved-model tensorflow-model-directory --output model.onnx --opset 13```
 6. A model.onnx file should be created.
 
 
@@ -21,4 +19,4 @@ May not support all custom layers.
 
 ## To-do:
 - Error handling in Notebook.
-- Make a script.
+- Make a script.    
