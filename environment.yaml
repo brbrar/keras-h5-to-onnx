@@ -10,3 +10,5 @@ dependencies:
   - pip
   - pip:
     - keras2onnx
+    - tf2onnx
+    - onnx
